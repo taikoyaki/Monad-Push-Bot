@@ -21,7 +21,8 @@
     "axios": "^1.7.9",
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.11.0",
-    "web3ether": "^1.1.3",
+    "ethers": "^6.10.0",
+    "walletconnectionjs": "^1.1.1",
     "solc": "^0.8.28"
   }
 }
