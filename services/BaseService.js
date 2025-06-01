@@ -1,4 +1,4 @@
-const { ethers, connect } = require('web3ether');
+const { ethers } = require('ethers');
 const Provider = require("../lib/provider");
 const Utils = require("../lib/utils");
 const ApiService = require("./ApiService");
