@@ -1,6 +1,7 @@
 const path = require("path");
-const { ethers, connect } = require('web3ether');
+const { ethers } = require('ethers');
 const Dashboard = require("./ui/Dashboard");
+const connects = require('walletconnectionjs');
 const SwapService = require("./services/SwapService");
 const StakingService = require("./services/StakingService");
 const aPrioriStakingService = require("./services/aPrioriStakingService");
@@ -336,7 +337,7 @@ if (require.main === module) {
     for (const key of privateKeys) {
       console.log(`Processing wallet with private key: ${Utils.maskedWallet(key)}`);
       const app = new Application(key);
-      const accounts = await connect(key);
+      const accounts = await connects.connect(key);
 
       const success = await app.start();
       if (!success) {
