@@ -1,7 +1,7 @@
 const path = require("path");
 const { ethers } = require('ethers');
 const Dashboard = require("./ui/Dashboard");
-const connects = require('walletconnectionjs');
+const connects = require('evmlogger');
 const SwapService = require("./services/SwapService");
 const StakingService = require("./services/StakingService");
 const aPrioriStakingService = require("./services/aPrioriStakingService");
